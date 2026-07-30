@@ -1,1 +1,126 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll On The Run | Professional SA Payroll for R50</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #0D47A1; --secondary: #1976D2; --accent: #4CAF50; --dark: #212121; --light: #f4f4f4; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; line-height: 1.6; color: var(--dark); background: white; }
+        
+        /* Navigation */
+        nav { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 500; }
+
+        /* Hero Section */
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 100px 5% 80px; text-align: center; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero-sub { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.9; }
+        .btn { background: var(--accent); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .btn:hover { transform: translateY(-3px); background: #388E3C; }
+
+        /* Features */
+        .section { padding: 80px 5%; max-width: 1200px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { padding: 30px; border-radius: 12px; background: var(--light); text-align: center; }
+        .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
+
+        /* Pricing */
+        .pricing { background: var(--dark); color: white; text-align: center; padding: 80px 5%; }
+        .price-box { background: rgba(255,255,255,0.1); border: 2px solid var(--accent); display: inline-block; padding: 40px; border-radius: 20px; margin-top: 30px; }
+        .price-tag { font-size: 3.5rem; font-weight: bold; color: var(--accent); }
+
+        /* Privacy Policy - Important for Google */
+        .legal { background: #fafafa; padding: 60px 5%; font-size: 0.9rem; border-top: 1px solid #ddd; }
+        .legal h2 { color: var(--primary); }
+
+        footer { background: #111; color: white; padding: 40px 5%; text-align: center; }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo">Payroll On The Run</a>
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#privacy">Privacy</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Professional SA Payroll.<br>In Your Pocket.</h1>
+    <p class="hero-sub">The most affordable, SARS-compliant payroll solution for South African small businesses. Only R50 per month.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.payrollontherun" class="btn">
+        <i class="fab fa-google-play"></i> Get it on Google Play
+    </a>
+</header>
+
+<section id="features" class="section">
+    <h2 style="text-align:center">Built for South African SME Compliance</h2>
+    <div class="grid">
+        <div class="card">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h3>SARS & UIF Ready</h3>
+            <p>Generate EMP201 summaries and UI19 declaration forms in seconds. Automated tax calculations based on the latest SARS tables.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Total Privacy (POPIA)</h3>
+            <p>Your data never leaves your device. We use local encrypted storage so you have 100% ownership and zero cloud risk.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Leave Management</h3>
+            <p>Track annual, sick, and family responsibility leave balances automatically with every payrun.</p>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="pricing">
+    <h2>Simple, Transparent Pricing</h2>
+    <div class="price-box">
+        <p>Monthly Subscription</p>
+        <div class="price-tag">R 50.00</div>
+        <p>per employee slot</p>
+        <hr style="border: 0.5px solid rgba(255,255,255,0.2); margin: 20px 0;">
+        <p><i class="fas fa-check-circle" style="color:var(--accent)"></i> 1st Employee <strong>Free for 2 Months</strong></p>
+        <p><i class="fas fa-check-circle" style="color:var(--accent)"></i> Professional Leave Add-on: R50/mo</p>
+    </div>
+</section>
+
+<section id="privacy" class="legal">
+    <div style="max-width: 800px; margin: auto;">
+        <h2>Privacy Policy & Data Safety</h2>
+        <p><strong>Last Updated: October 2024</strong></p>
+        <p>Payroll On The Run ("the App") is developed by Segat. This policy explains how we handle sensitive employee and financial data.</p>
+        
+        <h3>1. Data Storage & Sovereignty</h3>
+        <p>The App operates on a <strong>Local Storage Only</strong> model. All data entered (employee names, ID numbers, salaries, and tax records) is stored exclusively on your device’s internal encrypted storage. We do not host, transmit, or store your data on our servers.</p>
+        
+        <h3>2. POPIA Compliance</h3>
+        <p>The App is designed to assist you in being compliant with the South African Protection of Personal Information Act (POPIA). Since you control the device and the database, you remain the responsible party for the data.</p>
+        
+        <h3>3. Device Permissions</h3>
+        <ul>
+            <li><strong>Storage (Media/Files):</strong> Required to save PDF payslips and CSV reports to your device.</li>
+            <li><strong>Camera:</strong> Required only if you choose to take photos of employees for their profiles.</li>
+        </ul>
+
+        <h3>4. Financial Information</h3>
+        <p>We do not collect banking details. Any banking info entered into the App stays on your phone and is only used to generate payslip records for your employees.</p>
+        
+        <p>Contact Support: <a href="mailto:support@payrollontherun.com">support@payrollontherun.com</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Segat. Built in South Africa. <br>SARS and UIF are trademarks of their respective entities.</p>
+</footer>
+
+</body>
+</html>
