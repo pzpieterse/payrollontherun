@@ -28,9 +28,9 @@
         a { text-decoration: none; color: inherit; }
         
         /* Header */
-        nav { background: var(--white); padding: 0.75rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-        .logo { display: flex; align-items: center; gap: 100px; }
-        .logo img { height: 75px; width: auto; max-width: 480px; display: block; object-fit: contain; }
+        nav { background: var(--white); padding: 0.6rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; overflow: visible; }
+        .logo { display: flex; align-items: center; position: relative; z-index: 1001; margin: -20px 0; }
+        .logo img { height: 160px; width: auto; max-width: 520px; display: block; object-fit: contain; }
         .nav-links { display: flex; align-items: center; gap: 24px; }
         .nav-links a { font-weight: 500; color: var(--dark); font-size: 0.95rem; }
         .nav-links a:hover { color: var(--green); }
