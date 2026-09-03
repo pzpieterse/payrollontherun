@@ -9,51 +9,130 @@
         .header { text-align: center; border-bottom: 3px solid #003087; padding-bottom: 20px; margin-bottom: 30px; background: white; padding: 30px; border-radius: 0 0 20px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         h1 { color: #003087; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
         .version { color: #2E7D32; font-weight: bold; font-size: 1.1em; }
-        .download-btn { display: inline-block; background: #003087; color: white; padding: 20px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.3em; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,48,135,0.3); transition: transform 0.2s; }
+        .download-btn { display: inline-block; background: #003087; color: white; padding: 20px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.3em; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,48,135,0.3); transition: transform 0.2s; border: 0; cursor: pointer; }
         .download-btn:hover { transform: scale(1.05); background: #00256d; }
+        .download-btn:disabled { background: #9aa7c2; cursor: wait; transform: none; }
         .step { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; border-left: 8px solid #2E7D32; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         .step h3 { margin-top: 0; color: #003087; font-size: 1.3em; }
         .warning-box { background: #fff3e0; border: 1px solid #ffe0b2; padding: 20px; border-radius: 8px; margin-top: 30px; font-style: italic; }
         .support { margin-top: 50px; text-align: center; font-size: 0.9em; border-top: 1px solid #ddd; padding-top: 20px; color: #777; }
-        .code { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: bold; }
+        label { display: block; text-align: left; font-weight: 600; color: #003087; margin: 12px 0 4px; }
+        input { width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #c5cdd8; border-radius: 8px; font-size: 1em; }
+        .hint { font-size: 0.9em; color: #666; margin-top: 8px; }
+        .err { color: #b71c1c; font-weight: 600; min-height: 1.4em; margin-top: 10px; }
+        #downloadBlock { display: none; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Payroll On The Run</h1>
         <div class="version">ENTERPRISE EDITION</div>
-        
-        <!-- LINK THIS TO YOUR APK FILE -->
-        <a href="payroll_enterprise.apk" class="download-btn">⬇️ DOWNLOAD APP NOW</a>
+        <p class="hint">Register your company first. We activate the licence in Client Management, then you can download.</p>
         <p style="font-size: 0.8em; color: #666;">Version 1.9.1 (Code 91) for Android</p>
     </div>
 
-    <div class="step">
-        <h3>Step 1: Open the Installer</h3>
-        <p>Once the download is complete, tap the file in your notification bar or "Downloads" folder to begin.</p>
+    <div class="step" id="leadStep">
+        <h3>Step 1: Company details</h3>
+        <form id="leadForm" novalidate>
+            <label for="company">Company name *</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required>
+
+            <label for="contact">Contact person</label>
+            <input id="contact" name="contact" type="text" autocomplete="name">
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="phone">Tel *</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+
+            <p class="err" id="leadErr"></p>
+            <button type="submit" class="download-btn" id="leadBtn">Register</button>
+        </form>
     </div>
 
-    <div class="step">
-        <h3>Step 2: Security Permissions</h3>
-        <p>If Android blocks the install, tap <strong>Settings</strong> and switch <strong>"Allow from this source"</strong> to ON.</p>
-    </div>
-
-    <div class="step">
-        <h3>Step 3: Play Protect</h3>
-        <p>On the "Blocked by Play Protect" screen, tap <strong>"More details"</strong> and then <strong>"Install anyway"</strong>.</p>
-    </div>
-
-    <div class="step">
-        <h3>Step 4: Activation</h3>
-        <p>Open the app and go to <strong>Setup > Enterprise Overrides</strong> to enter your Registration Key.</p>
+    <div id="downloadBlock">
+        <div class="header" style="border-bottom: none; margin-bottom: 10px;">
+            <a href="payroll_enterprise.apk" class="download-btn">DOWNLOAD APP NOW</a>
+            <p class="hint">Your details are in Client Management. Licence stays blocked until we activate it.</p>
+        </div>
+        <div class="step">
+            <h3>Step 2: Open the installer</h3>
+            <p>Once the download is complete, tap the file in your notification bar or Downloads to begin.</p>
+        </div>
+        <div class="step">
+            <h3>Step 3: Security permissions</h3>
+            <p>If Android blocks the install, tap <strong>Settings</strong> and switch <strong>Allow from this source</strong> to ON.</p>
+        </div>
+        <div class="step">
+            <h3>Step 4: Play Protect</h3>
+            <p>On the Blocked by Play Protect screen, tap <strong>More details</strong> and then <strong>Install anyway</strong>.</p>
+        </div>
+        <div class="step">
+            <h3>Step 5: Activation</h3>
+            <p>Open the app and go to <strong>Setup &gt; Enterprise Overrides</strong> to enter your registration key after we activate it.</p>
+        </div>
     </div>
 
     <div class="warning-box">
-        <strong>POPIA COMPLIANT:</strong> We do not store your payroll data. All records stay on your device.
+        <strong>POPIA COMPLIANT:</strong> We do not store your payroll data. All records stay on your device. Company name, contact, email and tel are stored so we can issue a licence.
     </div>
 
     <div class="support">
         <a href="https://payrollontherun.com/contact">Contact Support</a> | &copy; 2026 Payroll On The Run
     </div>
+
+    <script>
+    (function () {
+      var SUPABASE_URL = 'https://oipwevwsncjhapgqlswe.supabase.co';
+      var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pcHdldndzbmNqaGFwZ3Fsc3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyNTg5ODgsImV4cCI6MjEwMTgzNDk4OH0.2tuxl82l9KdLJ-mcDk7jPYFlOGnOgfdfF1dEjUFMnDg';
+      var form = document.getElementById('leadForm');
+      var err = document.getElementById('leadErr');
+      var btn = document.getElementById('leadBtn');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        err.textContent = '';
+        var company = document.getElementById('company').value.trim();
+        var contact = document.getElementById('contact').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var phone = document.getElementById('phone').value.trim();
+        if (!company || !email || !phone) {
+          err.textContent = 'Company, email and tel are required.';
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          err.textContent = 'Enter a valid email address.';
+          return;
+        }
+        btn.disabled = true;
+        btn.textContent = 'Saving…';
+        fetch(SUPABASE_URL + '/rest/v1/rpc/submit_web_lead', {
+          method: 'POST',
+          headers: {
+            'apikey': SUPABASE_ANON_KEY,
+            'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            company_name: company,
+            contact_person: contact,
+            email: email,
+            phone: phone
+          })
+        }).then(function (res) {
+          return res.text().then(function (text) {
+            if (!res.ok) throw new Error(text || ('HTTP ' + res.status));
+            document.getElementById('leadStep').style.display = 'none';
+            document.getElementById('downloadBlock').style.display = 'block';
+            window.scrollTo(0, 0);
+          });
+        }).catch(function () {
+          err.textContent = 'Could not save your details. Try again or email support@payrollontherun.com.';
+          btn.disabled = false;
+          btn.textContent = 'Register';
+        });
+      });
+    })();
+    </script>
 </body>
 </html>
