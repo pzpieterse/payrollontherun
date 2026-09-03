@@ -20,6 +20,7 @@
         input { width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #c5cdd8; border-radius: 8px; font-size: 1em; }
         .hint { font-size: 0.9em; color: #666; margin-top: 8px; }
         .err { color: #b71c1c; font-weight: 600; min-height: 1.4em; margin-top: 10px; }
+        .code { background: #eee; padding: 4px 10px; border-radius: 4px; font-family: monospace; font-weight: bold; font-size: 1.15em; }
         #downloadBlock { display: none; }
     </style>
 </head>
@@ -27,7 +28,7 @@
     <div class="header">
         <h1>Payroll On The Run</h1>
         <div class="version">ENTERPRISE EDITION</div>
-        <p class="hint">Register your company first. We activate the licence in Client Management, then you can download.</p>
+        <p class="hint">Register your company to get an active licence: 1 employee for a 2-month trial. After that the employee slot is removed; the licence stays active.</p>
         <p style="font-size: 0.8em; color: #666;">Version 1.9.1 (Code 91) for Android</p>
     </div>
 
@@ -53,8 +54,10 @@
 
     <div id="downloadBlock">
         <div class="header" style="border-bottom: none; margin-bottom: 10px;">
+            <p>Your licence key</p>
+            <p class="code" id="licKey"></p>
+            <p class="hint" id="licHint">Active now with 1 employee. After the 2-month trial that slot is removed; the licence stays active. Enter the key in the app under Setup &gt; Enterprise Overrides.</p>
             <a href="payroll_enterprise.apk" class="download-btn">DOWNLOAD APP NOW</a>
-            <p class="hint">Your details are in Client Management. Licence stays blocked until we activate it.</p>
         </div>
         <div class="step">
             <h3>Step 2: Open the installer</h3>
@@ -70,7 +73,7 @@
         </div>
         <div class="step">
             <h3>Step 5: Activation</h3>
-            <p>Open the app and go to <strong>Setup &gt; Enterprise Overrides</strong> to enter your registration key after we activate it.</p>
+            <p>Open the app and go to <strong>Setup &gt; Enterprise Overrides</strong>. Enter the licence key shown above.</p>
         </div>
     </div>
 
@@ -122,6 +125,9 @@
         }).then(function (res) {
           return res.text().then(function (text) {
             if (!res.ok) throw new Error(text || ('HTTP ' + res.status));
+            var data = {};
+            try { data = JSON.parse(text); } catch (x) {}
+            document.getElementById('licKey').textContent = data.licence_key || '';
             document.getElementById('leadStep').style.display = 'none';
             document.getElementById('downloadBlock').style.display = 'block';
             window.scrollTo(0, 0);
