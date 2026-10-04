@@ -49,4 +49,4 @@
 ## Assets Needed from You
 - High-resolution version of the official app icon (green OnTheRun logo)
 - 3–5 clean screenshots from the app (or use the ones already on Play Store)
-- Current free-trial wording (2 or 3 months) so pricing copy is accurate
+- Current free-trial wording (60 days) so pricing copy is accurate
