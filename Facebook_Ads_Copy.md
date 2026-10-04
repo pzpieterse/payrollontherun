@@ -16,7 +16,7 @@ Payroll On The Run gives you professional, SARS-compliant payroll from only R50 
 ✅ Data stays on your phone (no cloud risk)  
 ✅ Perfect for small businesses & households  
 
-First employee free for a limited time. Download free on Google Play.
+First employee free for 60 days. Download free on Google Play.
 
 **Headline options**  
 - Professional SA Payroll from R50/month  
@@ -59,7 +59,7 @@ Employ a domestic worker, gardener or nanny?
 Stay compliant without complicated software.  
 Payroll On The Run helps you calculate pay, track leave, and generate the records you need — all from your phone.  
 
-Only R50 per employee slot. First one free for a limited time.
+Only R50 per employee slot. First one free for 60 days.
 
 **Headline options**  
 - Simple Payroll for Domestic Workers  
