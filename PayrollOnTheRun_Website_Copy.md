@@ -7,7 +7,7 @@
 
 ### Meta / SEO
 **Title**: Payroll On The Run | Professional SA Payroll for R50  
-**Description**: The most affordable SARS-compliant payroll app for South African small businesses and households. Local storage only. EMP201, UI19 & leave management. Download on Google Play.
+**Description**: The most affordable SARS-compliant payroll app for South African small businesses and households. Payroll data stays on your phone. EMP201, UI19 & leave management. Download on Google Play.
 
 ### Navigation
 - Features
@@ -25,7 +25,7 @@ In Your Pocket.
 **Primary CTA**: Get it on Google Play  
 **Secondary CTA**: See how it works
 
-**Trust line under CTAs**: Local storage only • POPIA-friendly • Built in South Africa
+**Trust line under CTAs**: Payroll data stays on your phone • POPIA-friendly • Built in South Africa
 
 ### Features Section
 **Section title**: Built for South African SME & Household Compliance
@@ -33,8 +33,8 @@ In Your Pocket.
 **Card 1 – SARS & UIF Ready**  
 Generate EMP201 summaries and UI19 declaration forms in seconds. Automated tax calculations based on the latest SARS tables. Export uFiling-ready CSV files.
 
-**Card 2 – Total Privacy (POPIA)**  
-Your data never leaves your device. We use local encrypted storage so you have 100% ownership and zero cloud risk.
+**Card 2 – Privacy (POPIA)**  
+Your payroll data (names, ID numbers, salaries) stays on your own phone – the Google Play version doesn't send it to us. The app doesn't encrypt its own database, so protect your phone with a screen lock.
 
 **Card 3 – Leave Management**  
 Track annual, sick and family responsibility leave balances automatically with every pay run. Automatic accruals and full history.
@@ -102,17 +102,17 @@ Support: support@payrollontherun.com
 
 **Headline**: Professional SA Payroll from only R50/month
 
-**Sub**: SARS & UIF ready • Data stays on your phone • Download free and try
+**Sub**: SARS & UIF ready • Payroll data stays on your phone • Download free and try
 
 **Bullets**:
 - Automated PAYE & UIF calculations
 - EMP201 summaries & UI19 forms in seconds
 - Leave tracking included
-- 100% local storage – your data never leaves your device
+- Your payroll data (names, ID numbers, salaries) stays on your own phone – the Google Play version doesn't send it to us.
 
 **Big green CTA**: Get it free on Google Play
 
-**Secondary text**: First employee free for 60 days. No cloud risk. Built for South African SMEs and households.
+**Secondary text**: First employee free for 60 days. Payroll data stays on your phone. Built for South African SMEs and households.
 
 **Trust line**: Independent software – not affiliated with SARS or government entities.
 
