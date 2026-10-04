@@ -70,7 +70,7 @@ Track annual, sick and family responsibility leave balances automatically with e
 **Price**: R 50.00  
 **Per**: employee slot per month
 
-- 1st Employee Free for 2 Months*
+- 1st Employee Free for 60 Days*
 - Professional Leave Add-on available
 - No long-term contracts
 - Cancel anytime
