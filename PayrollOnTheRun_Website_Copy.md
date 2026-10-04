@@ -75,7 +75,7 @@ Track annual, sick and family responsibility leave balances automatically with e
 - No long-term contracts
 - Cancel anytime
 
-*Exact free period subject to current Play Store offer.
+*First active employee free for 60 days from first install; after that R50 per active employee per month.
 
 ### FAQ (short version)
 **Is this affiliated with SARS?**  
@@ -112,7 +112,7 @@ Support: support@payrollontherun.com
 
 **Big green CTA**: Get it free on Google Play
 
-**Secondary text**: First employee free for a limited time. No cloud risk. Built for South African SMEs and households.
+**Secondary text**: First employee free for 60 days. No cloud risk. Built for South African SMEs and households.
 
 **Trust line**: Independent software – not affiliated with SARS or government entities.
 
