@@ -37,7 +37,7 @@
 
 ## 5. Key Messaging Pillars
 1. **Affordable** – From R50 per employee slot.
-2. **Private** – Data never leaves your device (POPIA-friendly).
+2. **Private** – Payroll data stays on your own phone; the Google Play version doesn't send it to us (POPIA-friendly).
 3. **Compliant** – SARS tables, EMP201, UI19, uFiling CSV.
 4. **Mobile-first** – Professional payroll in your pocket.
 5. **Built for SA** – SMEs and household employers.
