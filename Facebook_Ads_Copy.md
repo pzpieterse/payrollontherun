@@ -13,7 +13,7 @@ Tired of expensive payroll software?
 Payroll On The Run gives you professional, SARS-compliant payroll from only R50 per employee per month.  
 
 ✅ EMP201 & UI19 in seconds  
-✅ Data stays on your phone (no cloud risk)  
+✅ Payroll data stays on your phone  
 ✅ Perfect for small businesses & households  
 
 First employee free for 60 days. Download free on Google Play.
@@ -24,7 +24,7 @@ First employee free for 60 days. Download free on Google Play.
 - Payroll That Fits Your Pocket (and Budget)
 
 **Description**  
-Local storage only. Built for South Africa.
+Payroll data stays on your phone. Built for South Africa.
 
 ---
 
@@ -34,7 +34,7 @@ Local storage only. Built for South Africa.
 Your employee data should stay yours.  
 
 Most payroll systems upload everything to the cloud.  
-Payroll On The Run keeps all names, IDs and salaries encrypted on your own phone.  
+Your payroll data (names, ID numbers, salaries) stays on your own phone – the Google Play version doesn't send it to us.  
 
 SARS-ready calculations • EMP201 & UI19 • Leave tracking  
 From R50 per month.  
@@ -42,9 +42,9 @@ From R50 per month.
 Download free and keep full control.
 
 **Headline options**  
-- Your Payroll Data Never Leaves Your Phone  
+- Your Payroll Data Stays on Your Phone  
 - POPIA-Friendly Payroll for SA Businesses  
-- Local Storage Payroll – Zero Cloud Risk
+- Payroll Kept on Your Own Phone
 
 **Description**  
 Independent SA app. Not affiliated with SARS.
@@ -78,7 +78,7 @@ Professional SA payroll.
 In your pocket.  
 From R50/month.  
 
-SARS ready. Data stays on your phone.  
+SARS ready. Payroll data stays on your phone.  
 Tap to download free.
 
 **Headline**  
