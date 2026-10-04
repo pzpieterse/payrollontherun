@@ -32,7 +32,7 @@
 
 ## Next Recommended Actions
 - Extract high-res logo + 4–5 clean screenshots from Play Store
-- Confirm exact free-trial length (2 or 3 months) and update pricing text
+- Free-trial length is 60 days (first employee); update pricing text
 - Add Google Analytics / Meta Pixel to both pages
 - Set up the `/get-started` URL on your hosting
 - Launch small Facebook test campaigns using the supplied copy
