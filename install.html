@@ -22,6 +22,7 @@
         .err { color: #b71c1c; font-weight: 600; min-height: 1.4em; margin-top: 10px; }
         .code { background: #eee; padding: 4px 10px; border-radius: 4px; font-family: monospace; font-weight: bold; font-size: 1.15em; }
         #downloadBlock { display: none; }
+        .plat{display:flex;gap:16px;justify-content:center}.plat label{font-weight:400;color:#333;margin:4px 0}
     </style>
 </head>
 <body>
@@ -29,7 +30,7 @@
         <h1>Payroll On The Run</h1>
         <div class="version">ENTERPRISE EDITION</div>
         <p class="hint">Register your company to get an active licence: 1 employee for a 60-day trial. After that the employee slot is removed; the licence stays active. Use a real email — you will enter the same address in the app under Setup &gt; Sync Status.</p>
-        <p style="font-size: 0.8em; color: #666;">Version 1.9.11 (Code 101) for Android</p>
+        <p style="font-size: 0.8em; color: #666;">Android 1.9.11 (Code 101) &middot; Windows 1.9.3</p>
     </div>
 
     <div class="step" id="leadStep">
@@ -47,12 +48,15 @@
             <label for="phone">Tel *</label>
             <input id="phone" name="phone" type="tel" autocomplete="tel" required>
 
+            <label>Install on *</label>
+            <div class="plat"><label><input type="radio" name="platform" value="android" checked> Android phone</label>
+            <label><input type="radio" name="platform" value="windows"> Windows PC</label></div>
             <p class="err" id="leadErr"></p>
             <button type="submit" class="download-btn" id="leadBtn">Register</button>
         </form>
     </div>
 
-    <div id="downloadBlock">
+    <div id="downloadBlock"><div id="androidBlock">
         <div class="header" style="border-bottom: none; margin-bottom: 10px;">
             <p>Your licence key</p>
             <p class="code" id="licKey"></p>
@@ -75,10 +79,23 @@
             <h3>Step 5: Activation (Sync)</h3>
             <p>Open the app and go to <strong>Setup &gt; Sync Status</strong>. Enter the <strong>same email</strong> you used on this page, then tap <strong>Sync</strong> so the phone binds to this licence (not a new Pending Activation key). Optional: enter the licence key shown above if asked. Leave / Full Transactions / extra Aktiewe Werknemers unlock after Sync when enabled on your licence — email support@payrollontherun.com if Sync creates a second licence.</p>
         </div>
+        </div>
+        <div id="windowsBlock" style="display:none">
+        <div class="header" style="border-bottom: none; margin-bottom: 10px;">
+            <p>Your licence key</p>
+            <p class="code" id="licKeyWin"></p>
+            <p class="hint">Active now with 1 employee. After the 60-day trial that slot is removed; the licence stays active. Use the <strong>same email</strong> in the app's first-run licence screen so this PC binds to this licence (do not create a second licence).</p>
+            <a href="https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.3-windows/PayRollOnTheRun_Setup_v1.9.3.exe" class="download-btn" id="winDl">DOWNLOAD FOR WINDOWS (v1.9.3)</a>
+            <p class="hint" style="word-break:break-all">SHA-256: <code id="winSha">d4d11b5087a3de308c08b7ce935f023d314bbe572a4c8f37cfd71e86a9e51362</code><br>Size: 318 MB &middot; Windows 10/11 64-bit</p>
+        </div>
+        <div class="step"><h3>Step 2: Run the installer</h3><p>Open <strong>PayRollOnTheRun_Setup_v1.9.3.exe</strong>. If Windows SmartScreen shows "Windows protected your PC", click <strong>More info</strong> then <strong>Run anyway</strong>. The installer adds .NET 10 and the local database if needed and keeps existing data on upgrade.</p></div>
+        <div class="step"><h3>Step 3: Activation</h3><p>On first start the licence screen opens. Enter the <strong>same email</strong> you used on this page (optionally the licence key above) and click <strong>Activate</strong>. Email support@payrollontherun.com if a second licence is created.</p></div>
+        <div class="step"><h3>Optional: verify the download</h3><p>In PowerShell: <code>Get-FileHash .\PayRollOnTheRun_Setup_v1.9.3.exe</code> must match the SHA-256 above.</p></div>
+    </div>
     </div>
 
     <div class="warning-box">
-        <strong>YOUR DATA:</strong> We do not receive your payroll data – your payroll records (names, ID numbers, salaries) stay on your own phone. To issue and check your licence, we store your company name, contact person, email and tel, plus licence and device details from the app, on our licence server in Frankfurt, Germany. See payrollontherun.com/privacy-policy.
+        <strong>YOUR DATA:</strong> We do not receive your payroll data – your payroll records (names, ID numbers, salaries) stay on your own phone or PC. To issue and check your licence, we store your company name, contact person, email and tel, plus licence and device details from the app, on our licence server in Frankfurt, Germany. See payrollontherun.com/privacy-policy.
     </div>
 
     <div class="support">
@@ -127,7 +144,11 @@
             if (!res.ok) throw new Error(text || ('HTTP ' + res.status));
             var data = {};
             try { data = JSON.parse(text); } catch (x) {}
+            var plat = (document.querySelector('input[name=platform]:checked') || {}).value || 'android';
             document.getElementById('licKey').textContent = data.licence_key || '';
+            document.getElementById('licKeyWin').textContent = data.licence_key || '';
+            document.getElementById('androidBlock').style.display = plat === 'windows' ? 'none' : 'block';
+            document.getElementById('windowsBlock').style.display = plat === 'windows' ? 'block' : 'none';
             document.getElementById('leadStep').style.display = 'none';
             document.getElementById('downloadBlock').style.display = 'block';
             window.scrollTo(0, 0);
