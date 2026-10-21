@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "android": {
+    "version": "1.9.47",
+    "versionCode": 138,
+    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.47-android/POTR-sideload-1.9.47.apk",
+    "sha256": "5e17de91f0dd766cae7c0bf577899df6dbd5af5ce59db1d6c5df38e767defe29",
+    "legacyRequiresReinstall": false
+  },
+  "windows": {
+    "version": "1.9.9",
+    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.9-windows/PayRollOnTheRun_Setup_v1.9.9.exe",
+    "sha256": "07d21655a52b95b0897a3db7005951603130e51c5165b0dfceec302cf40b4920"
+  }
+}
