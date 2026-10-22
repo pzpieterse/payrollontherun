@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "android": {
-    "version": "1.9.48",
-    "versionCode": 139,
-    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.48-android/POTR-sideload-1.9.48.apk",
-    "sha256": "3daf8b896861a6449d197cf2116fa188ad2dc4b6475acf484417df580e5c3dd1",
+    "version": "1.9.49",
+    "versionCode": 140,
+    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.49-android/POTR-sideload-1.9.49.apk",
+    "sha256": "bfde2ff4bbc51de308f37827cb1690fd9ae4aa3fd14ec3b90b289b4ee989c275",
     "legacyRequiresReinstall": false
   },
   "windows": {
