@@ -8,8 +8,8 @@
     "legacyRequiresReinstall": false
   },
   "windows": {
-    "version": "1.9.9",
-    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.9-windows/PayRollOnTheRun_Setup_v1.9.9.exe",
-    "sha256": "07d21655a52b95b0897a3db7005951603130e51c5165b0dfceec302cf40b4920"
+    "version": "1.9.10",
+    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v1.9.10-windows/PayRollOnTheRun_Setup_v1.9.10.exe",
+    "sha256": "5fda7d9cc425f203a7a866de4e080749c3e6c35d0dbad14e1ebc4506032f9979"
   }
 }
