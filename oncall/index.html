@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="af">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnCall Port Alfred – Aflaai / Download</title>
+    <title>OnCall Port Alfred – Download</title>
     <meta name="description" content="OnCall Port Alfred: emergency numbers, local businesses and the community chat. Android download.">
     <link rel="icon" type="image/png" href="/favicon.png">
     <style>
@@ -17,32 +17,52 @@
         .sha { font-family: Consolas, monospace; font-size: 0.85em; word-break: break-all; background: #eef2f8; padding: 8px 10px; border-radius: 6px; }
         .warning-box { background: #fff3e0; border: 1px solid #ffe0b2; padding: 16px 20px; border-radius: 8px; margin-top: 24px; }
         .support { margin-top: 50px; text-align: center; font-size: 0.9em; border-top: 1px solid #ddd; padding-top: 20px; color: #777; }
+        .langbar { text-align: right; font-size: 0.9em; }
+        .langbar button { background: none; border: 1px solid #003087; color: #003087; border-radius: 14px; padding: 3px 12px; margin-left: 4px; cursor: pointer; }
+        .langbar button.on { background: #003087; color: #fff; }
+        body.af .en, body:not(.af) .af { display: none; }
     </style>
 </head>
 <body>
+    <div class="langbar"><button id="b-en" class="on" onclick="setLang('en')">English</button><button id="b-af" onclick="setLang('af')">Afrikaans</button></div>
     <h1>OnCall Port Alfred</h1>
     <p class="version">Android 0.4.9 (versionCode 20)</p>
-    <p>Noodnommers, plaaslike besighede en die buurtklets op jou foon.<br><em>Emergency numbers, local businesses and the community chat on your phone.</em></p>
+    <p class="en">Emergency numbers, local businesses and the community chat on your phone.</p>
+    <p class="af">Noodnommers, plaaslike besighede en die buurtklets op jou foon.</p>
 
-    <a class="download-btn" href="https://github.com/pzpieterse/payrollontherun/releases/download/v0.4.9-oncall/PortAlfredOnCall-0.4.9.apk">Laai OnCall af / Download OnCall (APK)</a>
-    <p>Grootte / Size: 16.3 MB · SHA-256:</p>
+    <a class="download-btn" href="https://github.com/pzpieterse/payrollontherun/releases/download/v0.4.9-oncall/PortAlfredOnCall-0.4.9.apk"><span class="en">Download OnCall (APK)</span><span class="af">Laai OnCall af (APK)</span></a>
+    <p><span class="en">Size</span><span class="af">Grootte</span>: 16.3 MB · SHA-256:</p>
     <p class="sha">86540e80ebb5ee5aa07c7f91739ea8b1c4af1284372b51bc1e9cc24bcedfaffc</p>
 
-    <h2>Installeer (Android)</h2>
-    <div class="step"><h3>1. Laai af</h3><p>Tik die blou knoppie hierbo. Die lêer <b>PortAlfredOnCall-0.4.9.apk</b> word afgelaai.</p></div>
-    <div class="step"><h3>2. Laat onbekende bronne toe</h3><p>Maak die afgelaaide lêer oop. As Android vra, tik <b>Instellings</b> en skakel <b>Laat van hierdie bron toe</b> (Installeer onbekende toeps) aan vir jou blaaier of lêerbestuurder. Gaan dan terug.</p></div>
-    <div class="step"><h3>3. Installeer</h3><p>Tik <b>Installeer</b>. As jy reeds OnCall het, bly jou instellings behoue. Latere weergawes word in die toep self aangebied (“Nuwe weergawe beskikbaar”).</p></div>
-
+    <div class="en">
     <h2>Install (Android)</h2>
     <div class="step"><h3>1. Download</h3><p>Tap the blue button above. The file <b>PortAlfredOnCall-0.4.9.apk</b> is downloaded.</p></div>
     <div class="step"><h3>2. Allow unknown sources</h3><p>Open the downloaded file. If Android asks, tap <b>Settings</b> and turn on <b>Allow from this source</b> (Install unknown apps) for your browser or file manager. Then go back.</p></div>
     <div class="step"><h3>3. Install</h3><p>Tap <b>Install</b>. If you already have OnCall, your settings are kept. Later versions are offered inside the app (“New version available”).</p></div>
+    </div>
+
+    <div class="af">
+    <h2>Installeer (Android)</h2>
+    <div class="step"><h3>1. Laai af</h3><p>Tik die blou knoppie hierbo. Die lêer <b>PortAlfredOnCall-0.4.9.apk</b> word afgelaai.</p></div>
+    <div class="step"><h3>2. Laat onbekende bronne toe</h3><p>Maak die afgelaaide lêer oop. As Android vra, tik <b>Instellings</b> en skakel <b>Laat van hierdie bron toe</b> (Installeer onbekende toeps) aan vir jou blaaier of lêerbestuurder. Gaan dan terug.</p></div>
+    <div class="step"><h3>3. Installeer</h3><p>Tik <b>Installeer</b>. As jy reeds OnCall het, bly jou instellings behoue. Latere weergawes word in die toep self aangebied (“Nuwe weergawe beskikbaar”).</p></div>
+    </div>
 
     <div class="warning-box">
-        <b>Kontroleer / Verify:</b> die SHA-256 van die afgelaaide lêer moet presies ooreenstem met die waarde hierbo. / The SHA-256 of the downloaded file must match the value above exactly.<br>
-        Hierdie is ’n toetsweergawe (debug build) vir Port Alfred. / This is a test (debug) build for Port Alfred.
+        <span class="en"><b>Verify:</b> the SHA-256 of the downloaded file must match the value above exactly.<br>This is a test (debug) build for Port Alfred.</span>
+        <span class="af"><b>Kontroleer:</b> die SHA-256 van die afgelaaide lêer moet presies ooreenstem met die waarde hierbo.<br>Hierdie is ’n toetsweergawe (debug build) vir Port Alfred.</span>
     </div>
 
     <div class="support">OnCall Port Alfred · PATAX (PA Tax Practitioners) · oncall@patax.co.za</div>
+    <script>
+    function setLang(l){
+        document.body.classList.toggle('af', l==='af');
+        document.documentElement.lang = l;
+        document.getElementById('b-en').classList.toggle('on', l!=='af');
+        document.getElementById('b-af').classList.toggle('on', l==='af');
+        try { localStorage.setItem('oncall_lang', l); } catch(e) {}
+    }
+    try { if (localStorage.getItem('oncall_lang')==='af') setLang('af'); } catch(e) {}
+    </script>
 </body>
 </html>
