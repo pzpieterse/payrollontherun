@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "android": {
-    "version": "0.4.7",
-    "versionCode": 18,
-    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v0.4.7-oncall/PortAlfredOnCall-0.4.7.apk",
-    "sha256": "57d7072f7e405be61052267efc3b1117f07e6d4a0b740241eb384cf0b5758389",
+    "version": "0.4.8",
+    "versionCode": 19,
+    "url": "https://github.com/pzpieterse/payrollontherun/releases/download/v0.4.8-oncall/PortAlfredOnCall-0.4.8.apk",
+    "sha256": "8c47f51c058ba83e8b94a788f41db7b083dd84c2ef8761f34fc40528a4d300a9",
     "debugBuild": true
   },
   "page": "https://payrollontherun.com/oncall/"
